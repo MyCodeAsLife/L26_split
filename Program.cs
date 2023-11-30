@@ -11,9 +11,10 @@ namespace L26_split
         static void Main(string[] args)
         {
             string userInput = "Если бы, да кабы, да во рту росли грибы";
-            string[] stringArray = userInput.Split(' ');
+            char delimiter = ' ';
+            string[] wordsArray = userInput.Split(delimiter);
 
-            foreach (string str in stringArray)
+            foreach (string str in wordsArray)
                 Console.WriteLine(str);
         }
     }
